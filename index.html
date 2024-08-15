@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin: 20px auto;
+        animation-name: abc1;
+        animation-duration: 10s; // speed control
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+      }
+      @keyframes abc1 {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background: green;
+        margin: 20px auto;
+        animation-name: abc2;
+        animation-duration: 1s; // speed control
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+      }
+      @keyframes abc2 {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        margin: 20px;
+        animation-name: abc3;
+        animation-duration: 10s; // speed control
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes abc3 {
+        0% {
+          transform: translateX(0px);
+        }
+        25% {
+          background: green;
+        }
+        50% {
+          background: blue;
+        }
+        75% {
+          background: pink;
+        }
+        100% {
+          transform: translateX(1300px);
+        }
+      }
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background: lavender;
+        margin: 20px;
+        animation-name: abc4;
+        animation-duration: 10s; // speed control
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+      }
+      @keyframes abc4 {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(400px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </body>
+</html>
